@@ -29,6 +29,7 @@ MODULE_LIST="
     python_sdk
     rust_sdk
     integration
+    poet2
 "
 
 usage() {
@@ -187,6 +188,9 @@ main() {
                 deployment)
                     test_deployment
                     ;;
+                poet2)
+                    test_poet2
+                    ;;
                 *)
                     echo "Module '$module' not found."
                     ;;
@@ -334,6 +338,10 @@ test_rust_sdk() {
     run_docker_test ./sdk/examples/intkey_python/tests/test_tp_intkey_rust.yaml
     run_docker_test ./sdk/examples/xo_python/tests/test_tp_xo_rust.yaml
     run_docker_test test_intkey_smoke_rust
+}
+
+test_poet2() {
+    run_docker_test ./consensus/poet2/core/unit_poet_2.yaml
 }
 
 test_integration() {

@@ -62,4 +62,9 @@ mkdir -p $top_dir/sdk/examples/xo_rust/bin/
 cd $top_dir/sdk/examples/xo_rust
 cargo build --release && cp ./target/release/xo_rust $top_dir/sdk/examples/xo_rust/bin/xo_rust
 
+echo -e "\033[0;32m--- Building poet-2 ---\n\033[0m"
+rm -rf $top_dir/sdk/consensus/poet2/core/bin/
+mkdir -p $top_dir/consensus/poet2/core/bin/
+cd $top_dir/consensus/poet2/core
+cargo build --release && cp ./target/release/poet2 $top_dir/consensus/poet2/core/bin/poet2
 # echo -e "\033[0;32m--- Building noop-tp-rust ---\n\033[0m"

@@ -33,6 +33,9 @@
 /consensus/poet/sgx/sawtooth_poet_sgx/libpoet_bridge/Makefile
 /consensus/poet/sgx/sawtooth_poet_sgx/libpoet_bridge/cmake_install.cmake
 /consensus/poet/sgx/sawtooth_poet_sgx/libpoet_enclave/cmake_install.cmake
+/consensus/poet2/core/target/
+/consensus/poet2/core/Cargo.lock
+/consensus/poet2/core/bin/
 
 # Everything else
 /adm/Cargo.lock
@@ -148,3 +151,4 @@
 /perf/intkey_workload/bin
 
 *.batch
+
